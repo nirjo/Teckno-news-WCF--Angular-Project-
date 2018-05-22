@@ -1,0 +1,85 @@
+<html>
+
+	<head>
+	<meta  charset="ISO-8859-1"/>
+	<script src="config.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="news_Container" ng-app="myApp" ng-controller="myCtrl" class="myContainer"> 
+				<div id="nt_container" class="newsContainer">
+					
+					
+					<div class="newsHeader">NT</div>
+					<div class="newsList">
+						
+					<ul  ng-repeat="item in items" >
+							<li>
+								<ul class="newsItem">
+									<li><span class="newsItemLabel">Title:</span>{{item.Title}}</li>
+									<li><span class="newsItemLabel">Date:</span>{{item.PublishDate}}</li>
+									
+									<li><span class="newsItemLabel">Description:</span><div class ="newsDescription" ng-bind-html="item.Description | renderHTMLCorrectly"></div></li>
+									<li><span class="newsItemLabel">Category:</span>{{item.Category}}</li>
+									<li><a href="{{item.Link}}" target="_blank">Open in New Window</a></li>
+								
+								</ul>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				
+				<div id="svd_container" class="newsContainer">
+					
+					
+					<div class="newsHeader">SVD</div>
+					<div class="newsList">
+						
+					<ul  ng-repeat="item in svditems" >
+							<li>
+								<ul class="newsItem">
+									<li><span class="newsItemLabel">Title:</span>{{item.Title}}</li>
+									<li><span class="newsItemLabel">Date:</span>{{item.PublishDate}}</li>
+									
+									<li><span class="newsItemLabel">Description:</span><div class ="newsDescription" ng-bind-html="item.Description | renderHTMLCorrectly"></div></li>
+									<li><span class="newsItemLabel">Category:</span>{{item.Category}}</li>
+									<li><a href="{{item.Link}}" target="_blank">Open in New Window</a></li>
+								
+								</ul>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				<div id="expressen_container" class="newsContainer">
+					
+					
+					<div class="newsHeader">Expressen</div>
+					<div class="newsList">
+						
+					<ul  ng-repeat="item in expressenitems" >
+							<li>
+								<ul class="newsItem">
+									<li><span class="newsItemLabel">Title:</span><span ng-bind-html="item.Title | renderHTMLCorrectly"></span></li>
+									<li><span class="newsItemLabel">Date:</span>{{item.PublishDate}}</li>
+									
+									<li><span class="newsItemLabel">Description:</span><div class ="newsDescription" ng-bind-html="item.Description | renderHTMLCorrectly"></div></li>
+									<li><span class="newsItemLabel">Category:</span>{{item.Category}}</li>
+									<li><a href="{{item.Link}}" target="_blank">Open in New Window</a></li>
+								
+								</ul>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+	
+	
+		
+	</div>
+	</body>
+	<script src="script.js"></script>
+		
+</html>
