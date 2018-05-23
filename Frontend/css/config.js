@@ -1,0 +1,1 @@
+var serviceUrl="http://localhost/NewsServiceImpl.svc";
