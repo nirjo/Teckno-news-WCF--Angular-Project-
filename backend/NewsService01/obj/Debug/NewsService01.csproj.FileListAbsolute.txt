@@ -1,0 +1,7 @@
+c:\users\nirmal\documents\visual studio 2010\Projects\NewsService01\NewsService01\bin\NewsService01.dll
+c:\users\nirmal\documents\visual studio 2010\Projects\NewsService01\NewsService01\bin\NewsService01.pdb
+c:\users\nirmal\documents\visual studio 2010\Projects\NewsService01\NewsService01\obj\Debug\NewsService01.dll
+c:\users\nirmal\documents\visual studio 2010\Projects\NewsService01\NewsService01\obj\Debug\NewsService01.pdb
+C:\Users\nirmal\documents\visual studio 2010\Projects\NewsService01\NewsService01\bin\Newtonsoft.Json.dll
+C:\Users\nirmal\documents\visual studio 2010\Projects\NewsService01\NewsService01\bin\Newtonsoft.Json.pdb
+C:\Users\nirmal\documents\visual studio 2010\Projects\NewsService01\NewsService01\bin\Newtonsoft.Json.xml
